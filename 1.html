@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--metadatos-->
+    <meta charset="UTF-8">
+    <meta name="author" content="claudia">
+    <meta name="description" content="portafolio bootstrap">
+    <meta name="keywords" content="HTML, CSS, JavaScript, React">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--icono boot-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!--css-->
+    <link href="style.css" rel="stylesheet">
+    <!--titulo-->
+    <title>Claudia | bootstrap</title>
+    <!--favicon-->
+    <link rel="icon" type="image/x-icon" href="img/reward.png">
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Dancing+Script&family=Rubik+Iso&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--nav bar-->
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-toggler">
+          <a class="navbar-brand" href="#">
+            <img src="img/reward.png" width="50" alt="logo">
+          </a>
+          <ul class="navbar-nav d-flex justify-content-center align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#sobre-mi">sobre mi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#proyectos">proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonio">testimonios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">contacto</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!--main / seccion hero-->
+    <section class="hero align-items-stretch">
+      <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+        <img class="hero-img-dev rounded-circle" src="img/564835.jpg" alt="foto">
+        <h1>hola Claudia</h1>
+        <h2>desarrollo web</h2>
+      </div>
+      <div class="hero-inferior">
+        <!--img-fluid : boost hace que se adapte la img al navegador-->
+        <img class="hero-inf-img img-fluid" src="img/1318269.jpeg" alt="img bajada">
+      </div>
+    </section>
+
+    <!--about me - clase y id mismo nombre-->
+    <section id="sobre-mi" class="sobre-mi seccion-oscura">
+      <div class="contenedor">
+        <h2 class="seccion-titulo">about Claudia</h2>
+        <p class="seccion-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam consectetur obcaecati dignissimos soluta in ut sequi eum commodi repellendus eos amet dolore, quam perspiciatis exercitationem ipsam ducimus suscipit sit eveniet!</p>
+      </div>
+    </section>
+
+    <!--experiencia-->
+    <section class="experiencia seccion-clara">
+      <!--contenedor - fila -->
+      <div class="container text-center">
+        <div class="row">
+          <!--desarrollo web-->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-laptop"></i>
+            <p class="experiencia-titulo">desarrollo web</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem inventore fugit architecto velit iure repellat iste mollitia, repellendus error aliquid, corrupti quasi consequuntur quia cupiditate ea beatae! Illo, sunt adipisci!</p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">HTML</span>
+              <span class="badge text-bg-primary">CSS</span>
+              <span class="badge text-bg-primary">JavaScript</span>
+              <span class="badge text-bg-primary">React</span>
+            </div>
+          </div>
+          <!--articulos-->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-laptop"></i>
+            <p class="experiencia-titulo">articulos</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem inventore fugit architecto velit iure repellat iste mollitia, repellendus error aliquid, corrupti quasi consequuntur quia cupiditate ea beatae! Illo, sunt adipisci!</p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">escribir</span>
+              <span class="badge text-bg-primary">editar</span>
+              <span class="badge text-bg-primary">blogs</span>
+            </div>
+          </div>
+          <!--estudiante-->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-laptop"></i>
+            <p class="experiencia-titulo">estudios</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem inventore fugit architecto velit iure repellat iste mollitia, repellendus error aliquid, corrupti quasi consequuntur quia cupiditate ea beatae! Illo, sunt adipisci!</p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">diseño web</span>
+              <span class="badge text-bg-primary">bootstrap</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--proyectos-->
+    <section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
+      <h2 class="seccion-titulo texto-negro">mis proyectos</h2>
+      <h3 class="seccion-descripcion">proyectos de ejemplo...</h3>
+      <!--galeria de proyectos-->
+      <div class="container text-center proyectos-contenedor">
+        <div class="row">
+          <!--proyecto 1-->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="img/564835.jpg" alt="proyecto 1">
+              <div class="overlay">
+                <p>proyecto 1</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/claudiamarchant/Bootstrap_5" target="_blank" rel="noopener noreferrer"> 
+                    <!--target: abrir en nueva pestaña - noopener: para seguridad-->
+                    <i class="bi bi-git"></i>
+                  </a>
+                  <a href="https://www.google.cl" target="_blank" rel="noopener noreferrer"> 
+                    <i class="bi bi-google"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+           <!--proyecto 2-->
+           <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="img/1318269.jpeg" alt="proyecto 1">
+              <div class="overlay">
+                <p>proyecto 2</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/claudiamarchant/Bootstrap_5" target="_blank" rel="noopener noreferrer"> 
+                    <!--target: abrir en nueva pestaña - noopener: para seguridad-->
+                    <i class="bi bi-git"></i>
+                  </a>
+                  <a href="https://www.google.cl" target="_blank" rel="noopener noreferrer"> 
+                    <i class="bi bi-google"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+           <!--proyecto 3-->
+           <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="img/564835.jpg" alt="proyecto 1">
+              <div class="overlay">
+                <p>proyecto 3</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/claudiamarchant/Bootstrap_5" target="_blank" rel="noopener noreferrer"> 
+                    <!--target: abrir en nueva pestaña - noopener: para seguridad-->
+                    <i class="bi bi-git"></i>
+                  </a>
+                  <a href="https://www.google.cl" target="_blank" rel="noopener noreferrer"> 
+                    <i class="bi bi-google"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+           <!--proyecto 4-->
+           <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="img/1318269.jpeg" alt="proyecto 1">
+              <div class="overlay">
+                <p>proyecto 4</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/claudiamarchant/Bootstrap_5" target="_blank" rel="noopener noreferrer"> 
+                    <!--target: abrir en nueva pestaña - noopener: para seguridad-->
+                    <i class="bi bi-git"></i>
+                  </a>
+                  <a href="https://www.google.cl" target="_blank" rel="noopener noreferrer"> 
+                    <i class="bi bi-google"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+           <!--proyecto 5-->
+           <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="img/564835.jpg" alt="proyecto 1">
+              <div class="overlay">
+                <p>proyecto 5</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/claudiamarchant/Bootstrap_5" target="_blank" rel="noopener noreferrer"> 
+                    <!--target: abrir en nueva pestaña - noopener: para seguridad-->
+                    <i class="bi bi-git"></i>
+                  </a>
+                  <a href="https://www.google.cl" target="_blank" rel="noopener noreferrer"> 
+                    <i class="bi bi-google"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+           <!--proyecto 6-->
+           <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="img/1318269.jpeg" alt="proyecto 1">
+              <div class="overlay">
+                <p>proyecto 6</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/claudiamarchant/Bootstrap_5" target="_blank" rel="noopener noreferrer"> 
+                    <!--target: abrir en nueva pestaña - noopener: para seguridad-->
+                    <i class="bi bi-git"></i>
+                  </a>
+                  <a href="https://www.google.cl" target="_blank" rel="noopener noreferrer"> 
+                    <i class="bi bi-google"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="https://www.youtube.cl" target="_blank" rel="noopener noreferrer">
+        <button type="button" class="btn btn-info">
+          ver mas proyectos
+          <i class="bi bi-caret-right-square-fill"></i>
+        </button>
+      </a>
+    </section>
+
+    <!--articulos-->
+    <section class="articulos justify-content-start">
+      <h2 class="seccion-titulo texto-negro">articulos</h2>
+      <div class="card">
+        <div class="card-header">
+          mas recientes
+        </div>
+        <ul class="list-group list-group-flush">
+          <a href="https://icons.getbootstrap.com/icons/caret-right-square-fill/" target="_blank" rel="noopener noreferrer">
+            <li class="list-group-item">bootstrap</li>
+          </a>
+          <a href="https://icons.getbootstrap.com/icons/caret-right-square-fill/" target="_blank" rel="noopener noreferrer">
+            <li class="list-group-item">iconos</li>
+          </a>
+          <a href="https://icons.getbootstrap.com/icons/caret-right-square-fill/" target="_blank" rel="noopener noreferrer">
+            <li class="list-group-item">list</li>
+          </a>
+          <a href="https://icons.getbootstrap.com/icons/caret-right-square-fill/" target="_blank" rel="noopener noreferrer">
+            <li class="list-group-item">alerts</li>
+          </a>
+          <a href="https://icons.getbootstrap.com/icons/caret-right-square-fill/" target="_blank" rel="noopener noreferrer">
+            <li class="list-group-item">modal</li>
+          </a>
+          <a href="https://icons.getbootstrap.com/icons/caret-right-square-fill/" target="_blank" rel="noopener noreferrer">
+            <li class="list-group-item">navbar</li>
+          </a>
+        </ul>
+      </div>
+      <a href="https://www.youtube.cl" target="_blank" rel="noopener noreferrer">
+        <button type="button" class="btn btn-outline-info">
+          ver mas articulos
+          <i class="bi bi-caret-right-square-fill"></i>
+        </button>
+      </a>
+    </section>
+
+    <!--testimonios-->
+    <section id="testimonio" class="testimonios seccion-clara">
+      <h2 class="seccion-titulo">testimonios</h2>
+      <h3 class="seccion-descripcion">clientes testimonios</h3>
+      <!--carrusel-->
+      <div id="testimonios-carrusel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <img class="testimonio-img rounded-circle" src="img/1318269.jpeg" alt="img 1">
+              <p class="testimonio-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eligendi ex dolorem, est ad fugiat quia rerum ea reiciendis asperiores iure veritatis in culpa, dolores necessitatibus.</p>
+              <div class="testimonio-info">
+                <p class="cliente">cliente 1</p>
+                <p class="cargo">cargo 1</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <img class="testimonio-img rounded-circle" src="img/564835.jpg" alt="img 1">
+              <p class="testimonio-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eligendi ex dolorem, est ad fugiat quia rerum ea reiciendis asperiores iure veritatis in culpa, dolores necessitatibus.</p>
+              <div class="testimonio-info">
+                <p class="cliente">cliente 2</p>
+                <p class="cargo">cargo 2</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <img class="testimonio-img rounded-circle" src="img/1318269.jpeg" alt="img 1">
+              <p class="testimonio-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eligendi ex dolorem, est ad fugiat quia rerum ea reiciendis asperiores iure veritatis in culpa, dolores necessitatibus.</p>
+              <div class="testimonio-info">
+                <p class="cliente">cliente 3</p>
+                <p class="cargo">cargo 3</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">siguiente</span>
+        </button>
+      </div>
+    </section>
+
+    <!--contacto-->
+    <section id="contacto" class="contacto seccion-oscura">
+      <div class="container">
+        <!--evenly: distribuir equitativamente-->
+        <div class="container text-center rectangulo d-flex justify-content-evenly">
+          <div class="row">
+            <div class="col-12 col-md-4 seccion-titulo">
+              ¡hablemos!
+            </div>
+            <div class="col-12 col-md-4 descripcion">
+              contactame para trabajos
+            </div>
+            <div class="col-12 col-md-4">
+              <a href="mailto:claudia.mg.txt@gmail.com">
+                <button type="button">
+                  contacto
+                  <i class="bi bi-envelope-check-fill"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--footer-->
+    <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
+      <img class="footer-logo" src="img/reward.png" alt="footer">
+      <p class="footer-texto text-center">aprendo y creo todos los días<br>creemos un proyecto juntos</p>
+      <div class="iconos-rrss d-flex flex-wrap align-items-center justify-content-center">
+        <a href="https://github.com/claudiamarchant/Bootstrap_5" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-github"></i>
+        </a>
+        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-youtube"></i>
+        </a>
+        <a href="https://www.instagram.com/c__txt/" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="mailto:claudia.mg.txt@gmail.com" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-envelope-paper-heart"></i>
+        </a>
+      </div>
+      <div class="derechos-de-autor">
+        creado por claudia 2023 &#169;
+      </div>
+    </footer>
+
+    <!-- la de js debe ir al final según bts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
